@@ -18,6 +18,8 @@ var enemies = [
     "Doomsday"
 ];
 
+// hello
+
 function whoWins(isThereKryptonite, enemyName) {
     if (isThereKryptonite) {
         return "Superman beats " + enemyName + ", of course";
