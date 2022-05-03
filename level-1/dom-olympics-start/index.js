@@ -44,31 +44,67 @@ myButton.addEventListener("click", function () {
 var changeTheme = document.querySelector("#theme-drop-down")
 changeTheme.addEventListener("change", function (event) {
     console.log(event.target.value)
+    var messageLeft = document.querySelectorAll(".left")
+    console.log(messageLeft)
+    var messageRight = document.querySelectorAll(".right")
+    console.log(messageRight)
+
     if (event.target.value === "theme-one") {
-        console.log("blue/brown")
-
-
-        var messageLeft = document.querySelectorAll(".left")
-        console.log(messageLeft)
-        for (var i = 0; i < messageLeft.length; i++) {
-            messageLeft[i].style.backgroundColor = "blue"
-        } if (event.target.value === "theme-two")
-            console.log("red/black")
+        messageLeft.forEach(message => {
+            message.style.backgroundColor = "blue"
+        })
 
 
 
-        var messageRight = document.querySelectorAll(".right")
-        console.log(messageRight)
-        for (var i = 0; i < message.length; i++)
-            messageRight[i].style.backgroundColor = "red"
-        console.log("red/black")
+        // for (var i = 0; i < messageLeft.length; i++) {
+        //     messageLeft[i].style.backgroundColor = "blue"
+        // } if (event.target.value === "theme-one")
+        //     console.log("red/black")
+
+
+
+
+        messageRight.forEach(message => {
+            message.style.backgroundColor = "brown"
+        })
     }
-}
-);
+    else if (event.target.value === "theme-two") {
+        messageLeft.forEach(message => {
+            message.style.backgroundColor = "red"
+        })
+        messageRight.forEach(message => {
+            message.style.backgroundColor = "black"
 
-    //for loop over messages change current message bg color
-    // else if statement event.target.value === "theme-two"
-    // do another variable and for loop for message right
+            message.style.color = "white"
+        })
+
+
+    }
+});
+
+//for loop over messages change current message bg color
+// else if statement event.target.value === "theme-two"
+// do another variable and for loop for message right
+
+
+document.getElementById("btn").addEventListener("click", function (event) {
+    //form.value = "Thank you for submitting"; 
+    event.preventDefault();
+    var newDiv = document.createElement("div");
+
+    var inputValue = document.getElementById("input")
+    newDiv.textContent = inputValue.value;
+    newDiv.setAttribute("class", "message left");
+
+    var messages = document.getElementsByClassName("messages");
+    messages[0].append(newDiv);
+
+    console.log(inputValue.value);
+    console.log(messages);
+
+
+})
+
 
 
 
