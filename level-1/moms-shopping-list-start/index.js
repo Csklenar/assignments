@@ -10,6 +10,7 @@ form.addEventListener("submit", function (event) {
     li.textContent = items;
     document.getElementById("list").append(li);
 
+
     const button = document.createElement("button");
     document.getElementById("list").append(button)
     button.textContent = "x"
@@ -18,7 +19,9 @@ form.addEventListener("submit", function (event) {
         console.log("Item removed");
 
         var removeItem = document.getElementById("list")
-        removeItem.remove();
+        li.remove();
+        button.remove();
+        editButton.remove();
         console.log(removeItem)
     })
 
@@ -27,17 +30,24 @@ form.addEventListener("submit", function (event) {
     editButton.textContent = "edit"
 
     editButton.addEventListener("click", function () {
-        editButton.textContent = "save";
+        const saveButton = document.createElement("button")
+        saveButton.textContent = "save"
+        li.append(saveButton)
         const input = document.createElement("input")
         li.append(input);
 
         input.value = items;
+        console.log(saveButton);
 
-        editButton.textContent.remove();
+        saveButton.addEventListener("click", function () {
+            console.log(input.value)
+            li.textContent = input.value;
+
+        })
+
+
+
     })
 
-    if (editButton.textContent = "save") {
-        editButton.textContent = "edit"
-    }
 }
 ); 
