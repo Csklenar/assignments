@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+    display: grid;
+    border: white;
+}
+
+header {
+    font-size: 22px;
+    background-color: #F5C6D6;
+    text-align: center;
+   
+}
+
+footer {
+    font-size: 22px;
+    background-color: #EE2E84;
+    text-align: center;
+    
+}
+
+#div1 {
+    font-size: 22px;
+    background-color: #85CFD8;
+    text-align: center;
+}
+
+#div2 {
+    font-size: 22px;
+    background-color: #8DC63F;
+    text-align: center;
+}
+
+#div3 {
+    font-size: 22px;
+    background-color: #E76E34;
+    text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+    header {
+    font-size: 22px;
+    background-color: #F5C6D6;
+    text-align: center;
+}
+
+footer {
+    font-size: 22px;
+    background-color: #EE2E84;
+    text-align: center;
+}
+
+#div1 {
+    font-size: 22px;
+    background-color: #85CFD8;
+    text-align: center;
+}
+
+#div2 {
+    font-size: 22px;
+    background-color: #8DC63F;
+    text-align: center;
+}
+
+#div3 {
+    font-size: 22px;
+    background-color: #E76E34;
+    text-align: center;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+
+footer {
+    font-size: 22px;
+    background-color: #EE2E84;
+    text-align: center;
+}
+
+#div1 {
+    font-size: 22px;
+    background-color: #85CFD8;
+    text-align: center;
+}
+
+#div2 {
+    font-size: 22px;
+    background-color: #8DC63F;
+    text-align: center;
+}
+
+#div3 {
+    font-size: 22px;
+    background-color: #E76E34;
+    text-align: center;
+}
+
+}
