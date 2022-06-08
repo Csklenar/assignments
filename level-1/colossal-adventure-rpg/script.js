@@ -9,21 +9,18 @@ const nabooEnemies = [
     hp: 100,
     atk: 50,
     item: 'force power',
-    hit: 2,
   },
   {
     name: 'Bobba Fett',
     hp: 90,
     atk: 30,
     item: 'handgun',
-    hit: 2,
   },
   {
     name: 'Count Dooku',
     hp: 80,
     atk: 40,
     item: 'armor',
-    hit: 2,
   },
 ];
 
@@ -31,7 +28,6 @@ const darthMaul = {
   name: 'darthMaul',
   hp: 40,
   item: 'saber crystal',
-  hit: 2,
 };
 
 const welcome = readlineSync.question('May I have your name? ');
@@ -41,9 +37,11 @@ let user = {
   hp: 100,
   atk: 20,
   item: 'Light Saber',
-  hit: 2,
+
   inventory: [],
 };
+
+console.log(user.name + ',' + ' ' + 'Choose an option');
 
 let gameLoop = true;
 while (gameLoop) {
@@ -51,7 +49,7 @@ while (gameLoop) {
 }
 
 function walk() {
-  optionMenu = ['walk', 'run', 'playerStats', 'inventory', 'hp'];
+  optionMenu = ['walk', 'playerStats', 'end'];
   const option = readlineSync.keyInSelect(optionMenu, 'which option?');
 
   if (optionMenu[option] === 'walk') {
@@ -65,12 +63,15 @@ function walk() {
   if (optionMenu[option] === 'playerStats') {
     printUser();
   }
-  if (optionMenu[option] === 'inventory') {
-    console.log(user.item);
+  if (optionMenu[option] === 'end') {
+    process.exit();
   }
-  if (optionMenu[option] === undefined) {
-    gameLoop = false;
-  }
+  // if (optionMenu[option] === 'inventory') {
+  //   console.log(user.item);
+  // }
+  // if (optionMenu[option] === undefined) {
+  //   gameLoop = false;
+  //}
 
   function printUser() {
     console.clear();
@@ -82,14 +83,14 @@ function walk() {
 
 function fight(creature) {
   console.clear();
-  console.log(creature);
+  // console.log(creature);
 
   engage = readlineSync.keyIn(
     'You have encountered ' + creature.name + '.' + '(a) attack or (r) run? ',
     { limit: 'ar' }
   );
   engage = engage.toLowerCase();
-  console.log(engage);
+  // console.log(engage);
   if (engage === 'a') {
     console.clear();
     attack(creature);
@@ -117,24 +118,25 @@ function run(creature) {
 function attack(creature) {
   console.clear();
   while (creature.hp > 0 && user.hp > 0) {
-    let playerAttacks = Math.floor(Math.random() * 25); //create variables for attacks, player attacks
+    let playerAttacks = Math.floor(Math.random() * 25);
     let enemyAttacks = Math.floor(Math.random() * 15);
     user.hp = user.hp - enemyAttacks;
     creature.hp = creature.hp - playerAttacks;
-    console.log(user.hp);
+    // console.log(user.hp);
     if (user.hp < 0) {
       gameLoop = false;
     } else if (creature.hp < 0) {
       console.log('You killed the enemy');
       // console.log(darthMaul.item);
 
-      itemDrop();
+      itemDrop(); // pass in creature to the function call
       console.log(
         'You have been given HP from Darth Maul and he dropped an item'
       );
       walk();
     }
   }
+
   //figure out when you get into the attack funtion do you attack or do they attack
   // if less than zero go back to walk()
   //if player hp < 0 "game over"
@@ -142,7 +144,8 @@ function attack(creature) {
 
   function itemDrop() {
     let itemAddedToInventory = inventory.push(creature.item);
-    console.log(itemAddedToInventory);
+    // console.log(itemAddedToInventory);
     readlineSync.keyInPause(newItem + darthMaul.item);
   }
 }
+// move outside of fight funciton and make a parameter set to creature
