@@ -1,0 +1,125 @@
+body {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    
+}
+
+#goomba {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.goombas {
+    background-color:aqua;
+}
+
+.bobOmbs {
+    background-color:aqua
+}
+
+.cheepCheeps {
+    background-color:aqua;
+}
+
+#bob-omb {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#cheep-cheeps {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#goomba-img {
+    height:250px;
+    max-width: 500px;
+    border: 2px solid blue;
+}
+
+#bobOmb-img {
+    height: 250px;
+    max-width: 500px;
+    border: 2px solid blue;
+}
+
+#cheepCheep-img {
+    height: 250px;
+    max-width: 500px;
+    border: 2px solid blue;
+}
+
+
+
+#submit {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    
+}
+
+.total {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: aqua;
+    text-align:center;
+    margin-top: 10px;
+}
+
+/* mobile media query*/
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: red;
+  }
+}
+
+/*ipad or tablet media query*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
+
+/*laptop media query*/
+@media only screen and (max-width: 1020px) {
+  body {
+    background-color:darkviolet;
+  }
+}
+
+/*desktop media query*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: pink;
+  }
+}

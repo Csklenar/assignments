@@ -6,39 +6,56 @@
 <h1>Mario Pest Control</h1>
 
 <body>
+    <div class="goombas">
+    <div id="goomba">
     <ul>
         <li>Goomba</li>
-        <img src="https://bit.ly/3aUBq1K" alt="Picture of a Goomba"/>
+        <img src="https://bit.ly/3aUBq1K" alt="Picture of a Goomba" id="goomba-img"/>
         <p>Price: 5 Coins</p>
         <form name="myForm">
         Total Caught: <input type="number" placeholder="number" name="goomba" id="goombaTotal"/>
+        </div>
+    </div>
         
-        
+        <div class="bobOmbs">
+        <div id="bob-omb">
         <li>Bob-ombs</li>
-        <img src="https://bit.ly/3NISsyr" alt="Picture of a Bob-omb"/>
+        <img src="https://bit.ly/3NISsyr" alt="Picture of a Bob-omb" id="bobOmb-img"/>
         <p>Price: 7 Coins</p>
-        Total Caught: <input type="number" name="bobOmb" id="bobOmbTotal"/>
+        Total Caught: <input type="number" name="bobOmb" id="bobOmbTotal" placeholder="number"/>
+        </div>
+        </div>
         
-        
+        <div class="cheepCheeps">
+        <div id="cheep-cheeps">
         <li>Cheep-cheeps</li>
-        <img src="https://bit.ly/3Hf8w8M" alt="Picture of a Cheep-cheep"/>
+        <img src="https://bit.ly/3Hf8w8M" alt="Picture of a Cheep-cheep" id="cheepCheep-img"/>
         <p>Price: 11 Coins</p>
-        Total Caught: <input type="number" name="cheepCheep" id="cheepCheepTotal"/><br>
+        Total Caught: <input type="number" name="cheepCheep" id="cheepCheepTotal" placeholder="number"/>
+        </div>
+        </div>
+        <br>
 
         <input type="submit" id="submit" value="submit"/><br>
         
+        <div class="total">
         <label id="totalPrice">Total Price:</label><br>
         <input type="text" id="total" name="total">
         </form>
         </ul>
-        
-
-
-    <script src="script.js"></script>
+    </div>
+    
+        <script src="script.js"></script>
 </body>
+
+<div class="footer">
+<fieldset>
+    <legend>Contact Us</legend>
 <footer>
-    <p>Email: mario@gmail.com</p>
+    <p>Email: mariopestcontrol@gmail.com</p>
     <p>Website: www.mariopestcontrol.com</p>
-    <p>123 Mario Castle Dr. Beach Island, Nintendo</p>
+    <p>Address: 123 Mario Castle Dr. Beach Island</p>
 </footer>
+</fieldset>
+</div>
 </html>
