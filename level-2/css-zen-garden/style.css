@@ -1,0 +1,339 @@
+/* *{
+    outline: 1px solid red;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* grid-auto-rows: repeat(7, 200px); */
+    grid-auto-rows: 270px 730px 530px 500px 270px 200px;
+    
+    /* grid-column: 1 / 5; */
+    /* give the container display grid */
+    /* with six rows, 50px high */
+    /* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+}
+
+
+#zenHeaderImg {
+    height: 270px;
+    width: 1332px;
+    
+}
+
+#zenSymbol {
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+}
+
+#arrow-icon {
+    position: absolute;
+    right: 98px;
+    top: 100px;
+    height: 46px;
+    width: 50px;
+    opacity: .3;
+}
+
+#arrow-icon:hover {
+    background-color: rgb(175, 175, 175);
+    opacity: .6;
+    transition-duration: .8s;
+}
+.cell-one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+    
+
+#viewDesigns {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    background: rgb(175, 175, 175);
+    padding: 12px;
+    opacity: .4;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#viewDesigns:hover {
+    background-color: rgb(175, 175, 175);
+    opacity: .7;
+    transition-duration: .8s;
+}
+
+.headTitle {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    color: whitesmoke;
+}
+
+.subTitle {
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    color: lightgrey;
+}
+
+.cell-two {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    
+}
+
+nav {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+}
+.cell-three {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-right: 10px;
+}
+
+.cell-three p {
+    color: #325050;
+    font-size: 1em;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.cell-three h3 {
+    margin-left: 30px;
+    color: #325050;
+    font-size: 1.3em;
+}
+.cell-four {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: rgba(138,188,159,0.5);
+    padding-right: 10px;
+    background-image: url("http://csszengarden.com/214/bamboo.png");
+   }
+
+.cell-four h3{
+    margin-left: 30px;
+    color: #325050;
+    font-size: 1.3em;
+}
+
+.cell-four p {
+    color: #325050;
+    font-size: 1em;
+    margin-left: 30px;
+    padding-top: 20px;
+    
+}
+.cell-five {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    padding-right: 10px;
+}
+
+.cell-five h3 {
+    margin-left: 30px;
+    color: #325050;
+    font-size: 1.3em;
+}
+
+.empty-space {
+    background-color: lightgray;;
+}
+
+.cell-five p {
+    color: #325050;
+    font-size: 1em;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+.cell-six {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    background-image: url("http://csszengarden.com/214/koi.jpg");
+    text-align: center;
+    padding-top: 100px;
+}
+
+.letters {
+    font-style: italic;
+    font-size: 30px;
+    color: darkgray;
+    
+}
+
+.letters2 {
+    font-size: 30px;
+    color: lightgray;
+    
+}
+
+.letters2:hover {
+    text-decoration: underline;
+}
+.cell-six img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.container > div {
+    border: solid black 1px;
+    
+}
+
+.authors {
+    background-color: lightgrey;
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    padding-top: 10px;
+}
+
+.authors span {
+    font-size: 16px;
+    font-style: italic;
+}
+#title {
+    list-style-type: none;
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-bottom: 20;
+    font-size: 1.2em;
+}
+
+#title:hover {
+    transition: color .8s ease-in;
+    color: blue;
+}
+.authors hr {
+    margin-left: 80px;
+    width: 220;
+}
+
+.authors div {
+    font-size:18px;
+    color: dimgray;
+}
+
+.authors div:hover {
+    transition: color 1s ease-in;
+    color: #0d8ba1;
+}
+
+
+.links {
+    background-color: rgba(138,188,159,0.5);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-image: url("http://csszengarden.com/214/bamboo.png");
+    
+}
+
+#linksHR {
+    margin-top: 60px;
+}
+
+.links hr {
+    margin-left: 80px;
+    width: 220px;
+}
+
+#title2 {
+    list-style-type: none;
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-bottom: 20;
+    font-size: 1.2em;
+    color: dimgray;
+}
+
+#title2:hover {
+    transition: color 1s ease-in;
+    color: #0d8ba1;
+}
+.footer {
+    /* make these span the width of the page */
+    background-color: #325050;
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    
+}
+
+@media only screen and (max-width: 900px){
+   
+    
+    /* use this media query to help these two cells drop to the bottom when screens are smaller */
+    .authors {
+         grid-row: 7 / 8;
+         grid-column: 1 / 3;
+    }
+    .links {
+        grid-row: 8 / 9;
+        grid-column: 1 / 3;
+    }
+    /* container could use some help so that it's children are full screen width */
+    .container {
+        width:fit-content;
+        height: fit-content;
+    }
+
+}
+
+/* FLEX */
+/* use flexbox to make the icons behave like css zen garden's social icons */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+#html {
+    font-size: larger;
+    color:#fff;
+    border-style: solid;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 40px
+}
+
+#html:hover {
+    background-color: grey;
+    color: darkslategray;
+    transition-duration: .2s;
+}
+
+#withinHTML {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 5px;
+}
+
+#withinHTML1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+#withinHTML2 {
+    margin-top: 10px;
+    margin-left: 6px;
+    padding-left: 5px; 
+}
+
+#withinHTML3 {
+    margin-top: 10px;
+    margin-left: 3px;
+    padding-left: 5px; 
+}
