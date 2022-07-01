@@ -280,12 +280,12 @@ nav {
     }
     /* container could use some help so that it's children are full screen width */
     .container {
-        /* width:fit-content;
-        height: fit-content; */
-        display: block;
+        width:100%;
+        /* height: fit-content; */
+        /* display: block; */
+   }
     
-    }
-    #viewDesigns {
+   #viewDesigns {
     position: absolute;
     top: 220px;
     
