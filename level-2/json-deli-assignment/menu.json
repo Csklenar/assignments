@@ -1,0 +1,74 @@
+{
+	"appetizers": [{
+		"name": [
+			"Chicken Noodle Soup",
+			"Chips and Salsa"
+		],
+		"ingredients": [
+			"Chicken broth",
+			"Noodles",
+			"Salt",
+			"Pepper"
+		],
+		"description": "A tasty warm Chicken Noodle Soup with salt and pepper with chips and mild salsa"
+	}],
+
+	"cold sandwhiches": [{
+		"name": [
+			"turkey sandwhich",
+			"Philly Cheese Steak"
+		],
+		"ingredients": [
+			"wheat bread",
+			"turkey",
+			"dijon mustard",
+			"mozzarella",
+			"Italian Bread",
+			"Pork",
+			"Onions",
+			"Mushrooms"
+		],
+		"description": "A delicious toasted turkey sandwich on wheat with dijon mustard and mozzarella cheese and also a delicious Philly Cheese Steak served on Italian Bread with Pork, Onions, Mushrooms, and Mozzarella Cheese"
+
+
+	}],
+	"hot sandwhiches": [{
+		"name": "Ham and Pastrami Sandwhich",
+		"ingredients": [
+			"Ham",
+			"Pastrami",
+			"Sourdough Bread",
+			"American Cheese",
+			"Garlic Aviola Sauce",
+			"Tomatoes",
+			"Onions"
+		],
+		"description": "A filling sandwhich that will light up your taste buds and fill your stomach with a bundle of flavor"
+	}],
+	"desserts": [{
+		"name": "Chocolate Lava Cake",
+		"ingredients": [
+			"Unsalted Butter",
+			"Chocolate Chips",
+			"Sugar",
+			"Large Egs",
+			"Egg Yolks",
+			"Vanilla Extract",
+			"Salt",
+			"Flour"
+		],
+		"description": "A delicious Chocolate Cake with the center being slightly undercooked, on purpose, resulting in a gooey, melty, and decadent treat that oozes out when you cut into it. "
+	}],
+	"drinks": [{
+		"name": ["Soda", "water"],
+		"ingredients": [
+			"Diet Coke",
+			"Coke a Cola",
+			"Sprite",
+			"Dr. Pepper",
+			"Root Beer",
+			"Water"
+		],
+		"description": "Your choice of beverage"
+	}]
+}
