@@ -1,0 +1,121 @@
+body {
+  background-color: #282D35;
+}
+.img-para {
+  height: 317px;
+  border: 2px solid #5093E2;
+}
+.main {
+  display: flexbox;
+  top: 44px;
+  align-items: center;
+  text-align: center;
+  color: #DCDCDC;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 15.36px;
+  padding-top: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+ }
+
+.linkedin-button {
+  margin-right: 10px;
+    width: 115px;
+    height: hug 34px;
+    height: 34px;
+    padding: 9px, 13px, 9px, 11px;
+    color: white;
+    background: #5093E2;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+    border-color: #5093E2;
+}
+
+.email-button {
+    background: #FFFFFF;
+    height: 34px;
+    width: 115px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+    color: black;
+    margin-right: 8px;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    margin-right: 8px;
+}
+
+.fa-linkedin:before {
+    content: "\f08c";
+    margin-right: 8px;
+}
+
+.personsName {
+  color: white;
+}
+
+.jobTitle {
+  color: #F3BF99;
+}
+.website {
+  color: #F5F5F5;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+ 
+}
+
+.footer {
+  background-color: #161619;
+  color: #DCDCDC;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer > *{
+  margin:0 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

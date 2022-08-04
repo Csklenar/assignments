@@ -51,6 +51,11 @@ function createTodo(todo) {
         checkbox.name = "todo-checkbox"
         checkbox.value = "value"
         container.appendChild(checkbox)
+        if(todo[i].completed){
+            checkbox.checked = true;
+            title.style.textDecoration = "line-through"
+            price.style.textDecoration = "line-through"
+        }
         // const updates = {
         //     completed: true
         // }
@@ -104,6 +109,17 @@ function createTodo(todo) {
         example: when using removeChild it is parent.removeChild() */
      }
      )
+     const editBtn = document.createElement("button")
+     editBtn.textContent = "Edit"
+     container.appendChild(editBtn)
+
+     editBtn.addEventListener("click", () => {
+        document.getElementById("editForm").style.display = "block";
+        editForm["title"].value = todo[i].title;
+        editForm["price"].value = todo[i].price;
+        editForm["description"].value = todo[i].description;
+        editForm["url"].value = todo[i].imageUrl;
+     })
  }
 }             
         
@@ -126,7 +142,7 @@ todoForm.addEventListener("submit", function(e){
     todoForm.title.value = ""
     todoForm.price.value = ""
     todoForm.description.value = ""
-    todoForm.imageUrl.value = ""
+    todoForm.url.value = ""
 })
 
 function clearList () {
