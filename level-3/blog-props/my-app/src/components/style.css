@@ -1,0 +1,124 @@
+/* *{outline: 1px solid red;} */
+
+.navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    height:200px;
+    width: 100%;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+}
+
+.nav-items {
+    /* display: flex;
+    flex-direction: row; */
+    list-style: none;
+}
+
+.nav-items > li {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.20rem;
+    padding-right: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.nav-items > li:hover {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.20rem;
+    padding-right: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.8;
+    
+}
+.header {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+    background-size: cover;
+    height: 606px;
+    background-color: rgba(73, 80, 87, 1);
+    box-shadow:inset 0 0 0 2000px rgba(73, 80, 87, .6);
+    opacity: 1;
+}
+
+.navbar-bootstrap {
+    color: #fff;
+    font-weight: 800;
+    margin-left: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-bootstrap:hover {
+    color: #fff;
+    font-weight: 800;
+    margin-left: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.8;
+}
+
+.img-titles {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 3rem;
+    color:#fff
+}
+
+.img-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.img-subtitle {
+   font-family:'Times New Roman', Times, serif;
+   font-size: 2rem;
+}
+
+.main {
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.25rem;
+    margin-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-weight: 800;
+    text-align: center;
+    /* width: 100%; */
+    align-items: center;
+}
+.main-titles:hover {
+    color: #0d6efd;
+    transition-timing-function: ease-in-out 0.3s;
+}
+
+.main-subtitle {
+    font-weight: 100;
+    font-size: 1.75rem;
+}
+
+.main-paragraph {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: #6c757d;
+    
+}
+.main-author:hover {
+    color: #0d6efd;
+    transition-timing-function: ease-in-out 0.3s;
+}
+
+.main-underline {
+    width: 50%;
+    margin-top: 50px;
+    color:#dee2e6;
+}

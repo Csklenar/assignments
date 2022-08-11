@@ -1,0 +1,77 @@
+.navbar {
+  background-color: #F55A5A;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.locations-card {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.locations-info {
+  padding-left: 20px;
+}
+
+.para-description {
+   width: 80%;
+}
+.fa-solid  {
+  color: #DADADA;
+  margin-right: 5px;
+}
+.nav-text {
+  color: #FFFFFF;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.location-img {
+  border-radius: 5px;    
+  height: 330px;
+  width: 430px;
+}
+#location-dot {
+  color:#F55A5A;
+}
+.start-end-date {
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
