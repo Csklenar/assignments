@@ -1,0 +1,32 @@
+.friend-wrapper {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.friend-info {
+  padding-bottom: 30px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.pets {
+  display: flex;
+  padding-left: 10px;
+  justify-content: space-evenly;
+}
+
+.Navbar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.hr {
+  width: 50%;
+}
