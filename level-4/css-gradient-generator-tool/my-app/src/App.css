@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+
+.callout {
+  border: 1px solid black;
+  height: 200px;
+  width: 50%;
+}
+
+
+.preview-gradient{
+  width: 100%;
+  height: 200px;
+  
+}
+
+.textArea {
+  width: 400px;
+  height: 80px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input--form {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form--btn {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    color: white;
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background: linear-gradient(60deg, red, blue, transparent);
+}

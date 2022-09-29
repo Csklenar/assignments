@@ -73,7 +73,7 @@ export default function Meme() {
 
   function addMemeToList(event) {
     event.preventDefault()
-    const {name, value} = event.target
+    // const {name, value} = event.target
     console.log(meme.randomMeme)
     setMemeList(prevMeme => {
       return [

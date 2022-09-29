@@ -27,13 +27,7 @@ message[3].textContent = "I am from Texas";
 console.log(message);
 
 var myButton = document.getElementById("clear-button")
-// myButton.addEventListener("click", function () {
-//     for (var i = 0; i < message.length; i++) {
-//         message[i].remove();
-//     }
 
-//     console.log(message);
-// })
 myButton.addEventListener("click", function () {
     for (var i = 0; i < message.length; i++) {
         message[i].style.display = "none"
