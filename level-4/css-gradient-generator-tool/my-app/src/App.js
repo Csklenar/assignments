@@ -87,13 +87,13 @@ function App() {
           />
           </div>
 
-          <div>
+          {/* <div>
           <button
           className="form--btn"
            onClick={addAnotherColor}
            >submit
            </button>
-          </div>
+          </div> */}
 
            <textarea
            className="textArea" 
