@@ -37,6 +37,7 @@
   justify-content: space-around;
   font-family: sans-serif;
   padding: 10px 10px;
+  background-color: #ff0000;
 }
 
 .footer {
@@ -47,4 +48,5 @@
   height: 2.5rem; 
   text-align: center;
   font-family: serif;
+  background-color: #ff0000;
 }

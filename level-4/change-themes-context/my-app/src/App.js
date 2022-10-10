@@ -1,18 +1,21 @@
-import React from "react"
+import React, {useContext} from "react"
 import Navbar from "./Navbar"
 import Main from "./Main"
 import Footer from "./Footer"
-import {ThemeContextProvider} from "./themeContext"
+import {ThemeContext} from "./themeContext"
 import './App.css';
 
 function App(props) {
+  const {color} = useContext(ThemeContext)
   return (
    <>
-    <ThemeContextProvider>
+    {/* <ThemeContextProvider> */}
+    <div className={`${color}-theme`}>
       <Navbar />
       <Main />
       <Footer />
-    </ThemeContextProvider>
+    </div>
+    {/* </ThemeContextProvider> */}
    </>
   );
 }

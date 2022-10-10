@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.form-wrapper {
+  height: 200px;
+  background: linear-gradient(90deg, #0000ff 1.18%, #add8e6 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-imgUrl {
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.input-title {
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.input-description {
+  border-radius: 5px;
+  height: 30px;
+  border: none;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.form-btn {
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 180px;
+  color: white;
+  background-color: #0000ff;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* color: #0000ff; */
+  margin-top: 50px;
+  font-weight: 200;
+}
+
+.images {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: none;
+}
+
+.editBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 30px;
+  margin-right: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0000ff;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.dltBtn {
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0000ff;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.save-btn {
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0000ff;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.description {
+  font-size: 15px;
+  color: #0000ff;
+  font-family: sans-serif;
+}
+
+.edit-title {
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-color: blue;
+}
+
+.edit-imgUrl {
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-color: blue;
+}
+
+.edit-description {
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-color: blue;
+}
