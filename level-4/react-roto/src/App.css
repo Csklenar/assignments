@@ -1,0 +1,121 @@
+*{
+  margin: auto;
+}
+
+.App {
+  /* height: 100%; */
+  height: 100vh;
+  background-image: url("https://bit.ly/3Mw3WFI");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.navbar {
+  height: 70px;
+  box-shadow: 0 2px 4px 0 rgba(243, 239, 239, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-items {
+  color:white;
+  font-size:20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-header {
+  text-align: center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+}
+
+.about-wrapper {
+  background-color: whitesmoke;
+  opacity: 0.8;
+  height: 192px;
+  margin-left: 155px;
+  margin-right: 155px;
+}
+
+.about-header {
+  text-align: center;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+}
+
+.about-description {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  width: 50%;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.home-img-wrapper {
+  text-align: center;
+}
+
+.home-img {
+  height: 280px;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-left: 5px;
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.services-title {
+  color:white;
+  text-align: center;
+}
+
+.services-product-img {
+  height: 236px;
+  text-align: center;
+}
+
+.services-header {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.services-list {
+  text-align: center;
+}
+
+.services-items {
+  background-color: whitesmoke;
+  width: 40%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  height: 130px;
+}
+
+.services-details-header {
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.services-details {
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.services-details-wrapper {
+    background-color: whitesmoke;
+    width: 40%;
+    opacity: 0.8;
+    height: 130px;
+}
+
