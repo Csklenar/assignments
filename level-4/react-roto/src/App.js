@@ -13,15 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-          {/* <Link to='/' >
-            <a className="nav-items">Home</a>
-          </Link>
-          <Link to='/about' >
-            <a className="nav-items">About</a>
-          </Link>
-          <Link to='/services' >
-            <a className="nav-items">Services</a>
-          </Link> */}
+          
         
         <Routes>
           <Route path='/' element={<Home />} />
