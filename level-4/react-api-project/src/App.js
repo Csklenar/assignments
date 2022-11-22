@@ -14,7 +14,7 @@ function App() {
   // You can have multiple routes to input just place the path and element you want to go to
   return (
     <div className='App'>
-      <Router>
+      {/* <Router> */}
         <Navbar />
         <SecondNavbar />
        
@@ -23,7 +23,7 @@ function App() {
           <Route path='/animals' element={<Animals />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-      </Router>
+      {/* </Router> */}
     </div>
   );
 }

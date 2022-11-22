@@ -9,13 +9,13 @@ function App(props) {
   const {color} = useContext(ThemeContext)
   return (
    <>
-    {/* <ThemeContextProvider> */}
+    
     <div className={`${color}-theme`}>
       <Navbar />
       <Main />
       <Footer />
     </div>
-    {/* </ThemeContextProvider> */}
+   
    </>
   );
 }
