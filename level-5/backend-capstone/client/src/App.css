@@ -1,0 +1,79 @@
+.home-wrapper {
+   
+    padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.header {
+   color: #AAA;
+   font-size: 36px;
+   font-weight: 400;
+   text-align: center;
+}
+
+strong {
+    color: #313131;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+        box-shadow: 5px 5px 8px #3333;
+}
+
+.nav-items {
+    font-family: sans-serif;
+    color: black;
+}
+
+.form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-inputs {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 10px;
+    width: 20%;
+}
+
+.form-button {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.title-header {
+    margin: 5px;
+}
+
+.genre {
+    margin: 5px;
+}
+
+.anime {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 5px;
+}
+
+.anime-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+}
+
+.delete-btn {
+    background-color:indigo;
+    color: white;
+}
+
+.edit-btn {
+    background-color:rgb(253, 8, 200);
+    color: white;
+}
